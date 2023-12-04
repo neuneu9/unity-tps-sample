@@ -1,0 +1,54 @@
+{
+    "name": "TpsControls",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "59168834-baba-46ea-9b90-b5013538d6de",
+            "actions": [
+                {
+                    "name": "Look",
+                    "type": "Value",
+                    "id": "eee709e7-8139-4595-967e-17ad09730ca3",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "LookDolly",
+                    "type": "Value",
+                    "id": "ec517759-593a-46ad-8705-a733f544f35f",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c6a7340f-e1c1-4475-a4ef-10b4ca0f57e0",
+                    "path": "<Pointer>/delta",
+                    "interactions": "",
+                    "processors": "InvertVector2(invertX=false),ScaleVector2(x=0.3,y=0.2)",
+                    "groups": "",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9051048a-4bf1-49f9-99a4-25e347502579",
+                    "path": "<Mouse>/scroll/y",
+                    "interactions": "",
+                    "processors": "Invert,Scale(factor=0.003)",
+                    "groups": "",
+                    "action": "LookDolly",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
